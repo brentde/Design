@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    --btn-height: 50px;
+    --btn-width: 200px;
+    --btn-font-size: 1em;
+}
+
+html, body {
+    margin: 0;
+}
+
+.content-div {
+    height: 100vh; 
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.btn {
+    border: none;
+    border-radius: 25px;
+    padding: 0;
+    background-color: hsla(200, 100%, 50%, 40%);
+    border: 1px solid hsla(200, 100%, 50%, 90%);
+    height: var(--btn-height);
+    width: var(--btn-width);
+    font-size: var(--btn-font-size);
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: hsla(200, 100%, 50%, 60%);
+}
+
+.bounce:focus {
+    animation: bounce 250ms linear forwards;
+}
+
+.lightshow:focus {
+    animation: lightshow 2s ease-in-out infinite;
+}
+
+
+@keyframes bounce {
+    0% {
+        height: calc(var(--btn-height) * .5);
+        width: calc(var(--btn-width) * .5);
+        font-size: 0;
+    }
+    100% {
+        height: var(--btn-height);
+        width: var(--btn-width);
+        font-size: var(--btn-font-size);
+    }
+}
+
+@keyframes lightshow {
+    0% {
+        border-top: 10px solid #FC3756;
+    }
+    25% {
+        border-top: 0;
+        border-right: 10px solid #81217C;
+    }
+    50% {
+        border-right: 0;
+        border-bottom: 10px solid #24AD2D;
+    }
+    75% {
+        border-bottom: 0;
+        border-left: 10px solid #D13189;
+    }
+}

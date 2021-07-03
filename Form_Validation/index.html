@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <script src="index.js" defer></script>
+        <title>Form Validation</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="form-div">
+                <h3>Welcome</h3>
+                <form>
+                    <div class="login-field">
+                        <label>Email</label>
+                        <input id="email-input" type="email">
+                        <div id="email-error" class="validation-error">
+                            <p>Error. The password must be at least 6 characters long.</p>
+                        </div>
+                    </div>
+                    <div class="login-field">
+                        <label>Password</label>
+                        <input id="password-input" type="password">
+                        <div id="pw-error" class="validation-error">
+                            <p>Error. The password must be at least 6 characters long.</p>
+                        </div>
+                    </div>
+                    <button type="submit">Sign In</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
