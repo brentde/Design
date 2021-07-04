@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    --accent-color: #641BFF;
+    --heading-font-family: 'Poppins', sans-serif;
+    --body-font-family: 'Lato', sans-serif;
+}
+
+html, body {
+    margin: 0;
+}
+
+.main {
+    background-color: lightgray;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.pricing-content {
+    background-color: whitesmoke;
+    position: absolute;
+    min-width: 800px;
+    max-width: 1000px;
+    min-height: 600px;
+    max-height: 800px;
+    
+    height: 600px;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Card styles */
+
+.card {
+    box-shadow: 0px 7px 30px rgba(52, 31, 92, .1);
+    border-radius: 10px;
+    background-color: white;
+    width: 250px;
+    height: 400px;
+    position: relative;
+}
+
+.professional {
+    height: 500px;
+    background-color: var(--accent-color);
+    color: white;
+}
+
+/* Details section */
+
+.details-section {
+    text-align: center;
+    font-family: var(--heading-font-family);
+    font-weight: bolder;
+}
+
+.feature-section {
+    font-family: var(--body-font-family);
+}
+
+/* Button styles */
+
+.btn {
+    border: none;
+    outline: none;
+    background: none;
+    width: 75%;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px;
+    font-family: var(--body-font-family);
+    color: white;
+    background-color: var(--accent-color);
+    cursor: pointer;
+}
+
+.prof-btn {
+    color: var(--accent-color);
+    background-color: white;
+}
+
+/* Text styles */
+
+.small-txt {
+    font-size: 15px;
+}
+
+.lg-txt {
+    font-size: 30px;
+}
+
+.strike-through {
+    text-decoration: line-through;
+    color: lightgray;
+}
+
+/* Element Selectors */
+
+hr {
+    width: 85%;
+    color: lightgray;
+}
+
+li {
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    margin-right: 5px;
+}
